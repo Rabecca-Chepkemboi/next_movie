@@ -16,16 +16,20 @@ const MovieDetail = ({ params: { movieId } }: { params: { movieId: number } }) =
         })();
     }, [movieId]);
     return (
-    <div>
+        <div className="flex justify-center items-center h-screen">
         {movieDetail && (
-        <div>
-            <img src={`https://image.tmdb.org/t/p/w500/${movieDetail.poster_path}`} alt={movieDetail.title}/>
-            <h2>{movieDetail.title}</h2>
-            <p>Overview: {movieDetail.overview}</p>
-            <p>Release Date: {movieDetail.release_date}</p>
-            </div>
-            )}
-            </div>
+          <div className="text-center">
+            <img
+              src={`https://image.tmdb.org/t/p/w500/${movieDetail.poster_path}`}
+              alt={movieDetail.title}
+              className="mx-auto"
+            />
+            <h2 className="text-2xl font-bold mt-4">{movieDetail.title}</h2>
+            <p className="mt-2">Overview: {movieDetail.overview}</p>
+            <p className="mt-2 font-bold">Release Date: {movieDetail.release_date}</p>
+          </div>
+        )}
+      </div>
     );
 }
 

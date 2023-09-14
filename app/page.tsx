@@ -1,10 +1,12 @@
 'use client';
 import Movies from './components/getMovies';
+import Navbar from './components/navbar/navbar';
 export default function Home() {
   return (
     <main>
       <div>
-    <Movies/>
+        <Navbar/>
+        <Movies/>
       </div>
     </main>
   )
