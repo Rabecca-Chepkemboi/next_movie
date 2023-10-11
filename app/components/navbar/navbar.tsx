@@ -3,17 +3,22 @@ import Head from "next/head";
 // import { searchMovies } from "../../utils/utilities";
 
 const Navbar = () => {
-//   const [searchValue, setSearchValue] = useState("");
-//   const [searchResults, setSearchResults] = useState([]);
 
-//   const handleInput = (event) => {
-//     setSearchValue(event.target.value);
-//   };
+  
 
-//   const handleSearch = async () => {
-//     const results = await searchMovies(searchValue);
-//     setSearchResults(results.results);
-//   };
+  // const [searchValue, setSearchValue] = useState("");
+  // const [searchResults, setSearchResults] = useState([]);
+
+  // const handleInput = (event) => {
+  //   setSearchValue(event.target.value);
+  // };
+
+  // const handleSearch = async () => {
+  //   const results = await searchMovies(searchValue);
+  //   setSearchResults(results.results);
+  // };
+
+
 
   return (
     <>
@@ -44,17 +49,19 @@ const Navbar = () => {
                 Search
               </button>
             </div>
-            <ul className="flex items-center space-x-4 text-white">
-              <li>Home</li>
-              <li>About</li>
-              <li>My list</li>
-              <button className="px-4 py-2 bg-blue-400 text-white rounded-md">
-                Sign in
+            <ul className="flex items-center space-x-8 text-white">
+              <li className="cursor-pointer">Home</li>
+              <li className="cursor-pointer">About</li>
+              <li className="cursor-pointer">My list</li>
+              <button className="px-4 py-2 bg-blue-400 text-white rounded-md cursor-pointer">
+               Sign in
               </button>
             </ul>
+
           </div>
         </nav>
       </div>
+
 
       {/* {searchResults.length > 0 && (
         <div className="container mx-auto mt-8">
@@ -78,6 +85,8 @@ const Navbar = () => {
           </div>
         </div>
       )} */}
+
+
     </>
   );
 };
