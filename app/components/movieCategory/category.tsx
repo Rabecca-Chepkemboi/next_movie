@@ -47,7 +47,7 @@ const Category = () => {
         {genres.map((genre) => (
           <button
             key={genre.id}
-            className={`bg-blue-400 hover:bg-blue-400 rounded-full text-white font-semibold py-2 px-4 ${
+            className={`bg-blue-400 hover:bg-yellow-600 rounded-full text-white font-semibold py-4 px-8 ${
               selectedGenre === genre.id ? 'bg-blue-400' : ''
             }`}
             onClick={() => {
