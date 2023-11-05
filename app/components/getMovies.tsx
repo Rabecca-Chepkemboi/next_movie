@@ -3,6 +3,8 @@ import { useState,useEffect } from 'react'
 import { getMovies } from '../utilities/getMovies';
 import { NEXT_PUBLIC_IMAGE_BASE_URL } from '../config'
 import Link from 'next/link';
+
+
 interface MovieProps{
   id:number;
   title:string;
