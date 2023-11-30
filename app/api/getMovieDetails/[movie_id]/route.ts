@@ -1,6 +1,7 @@
 import { BASE_URL,ACCESS_TOKEN } from "@/app/config";
 import { METHODS } from "http";
 
+
 export async function GET(_request:Request,{params}:{params:{movie_id:number}}){
     const movie_id=params.movie_id
     try{

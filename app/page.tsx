@@ -1,6 +1,6 @@
 'use client';
 import { imageConfigDefault } from 'next/dist/shared/lib/image-config';
-import Movies from './components/getMovies';
+import Movies from './components/moviees/getMovies';
 import Carousel from './components/caurosel/caurosel';
 import Footer from './components/footer/footer';
 import Category from './components/movieCategory/category';
